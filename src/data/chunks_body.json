@@ -1,9 +1,20 @@
-[
-  "for example",
-  "for instance",
-  "specifically",
-  "play a crucial role in",
-  "take into consideration",
-  "contribute to",
-  "lead to"
-]
+{
+  "play a crucial role in": "〜において極めて重要な役割を果たす",
+  "have a significant impact on": "〜に重大な影響を与える",
+  "have a positive effect on": "〜に良い影響を与える",
+  "have a negative effect on": "〜に悪影響を及ぼす",
+  "take into consideration": "〜を考慮に入れる",
+  "contribute significantly to": "〜に大きく貢献する",
+  "lead to negative consequences": "否定的な結果を招く",
+  "one of the main reasons is that": "主な理由の一つは〜である",
+  "a prime example of this is": "これの典型的な例は〜である",
+  "according to recent studies": "最近の研究によると",
+  "it is clear that": "〜は明らかである",
+  "in terms of": "〜の観点から",
+  "when it comes to": "〜に関して言えば",
+  "is a key factor in": "〜における重要な要因である",
+  "make it possible to": "〜することを可能にする",
+  "prevent people from": "人々が〜するのを防ぐ",
+  "enable people to": "人々が〜できるようにする",
+  "provide people with": "人々に〜を提供する"
+}

@@ -275,3 +275,131 @@ textarea:focus {
   border-radius: 20px;
   margin-top: 5px;
 }
+
+/* --- ワークスペース（左右分割）のレイアウト --- */
+.workspace-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.editor-area {
+  flex: 2; /* 左側を広く取る */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-area {
+  flex: 1; /* 右側は少し狭め */
+  position: sticky;
+  top: 20px; /* スクロールしても画面上部についてくる */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 選択中の段落ボックスを目立たせる */
+.active-box {
+  border: 3px solid #3498db;
+  box-shadow: 0 0 15px rgba(52, 152, 219, 0.3);
+  transform: scale(1.01);
+  transition: all 0.2s ease;
+}
+
+/* --- サイドバー内のモジュール --- */
+.sidebar-module {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border: 1px solid #e1e8ed;
+}
+
+.sidebar-module h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #f0f2f5;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/* 検索機能のスタイル */
+.search-desc {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.search-results {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.search-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ccc;
+}
+.search-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+.jpn-text { font-size: 0.9rem; color: #555; }
+.eng-text { font-size: 1.1rem; color: #2980b9; margin-top: 4px; }
+
+/* サイドバーのフィードバックリスト */
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.side-badge {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  animation: slideIn 0.3s ease-out;
+}
+
+.side-chunk { background-color: #fff9c4; color: #827717; border-left: 5px solid #fbc02d; }
+.side-synonym { background-color: #e1f5fe; color: #0277bd; border-left: 5px solid #03a9f4; }
+.side-error { background-color: #fce4e4; color: #c0392b; border-left: 5px solid #e74c3c; }
+
+.empty-feedback {
+  font-size: 0.9rem;
+  color: #95a5a6;
+  text-align: center;
+  font-style: italic;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* iPad縦向きなどのレスポンシブ対応 */
+@media (max-width: 800px) {
+  .workspace-container { flex-direction: column; }
+  .sidebar-area { position: static; }
+}

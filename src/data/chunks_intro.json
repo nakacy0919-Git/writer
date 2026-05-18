@@ -1,7 +1,18 @@
-[
-  "it is widely believed that",
-  "it is often said that",
-  "from my perspective",
-  "in my opinion",
-  "nowadays"
-]
+{
+  "it is widely believed that": "〜であると広く信じられている",
+  "it is generally agreed that": "〜であると一般的に同意されている",
+  "in recent years, there has been a growing tendency to": "近年、〜する傾向が高まっている",
+  "nowadays, it is an undeniable fact that": "今日、〜は否定できない事実である",
+  "one of the most highly debated issues today is whether": "今日最も激しく議論されている問題の一つは、〜かどうかである",
+  "a controversial issue in modern society is": "現代社会において論争の的となっている問題は〜である",
+  "it has become a matter of common concern that": "〜は共通の関心事となっている",
+  "the question of whether": "〜かどうかという疑問",
+  "from my perspective": "私の観点からは",
+  "i strongly believe that": "私は〜だと強く信じている",
+  "i am of the opinion that": "私は〜という意見を持っている",
+  "i firmly stand by the idea that": "私は〜という考えを固く支持する",
+  "my personal view on this matter is that": "この問題に関する私の個人的な見解は〜である",
+  "this essay will explore": "本エッセイでは〜について探求する",
+  "the primary purpose of this essay is to": "本エッセイの主な目的は〜することである",
+  "in this essay, i will present": "本エッセイでは、〜を提示する"
+}
