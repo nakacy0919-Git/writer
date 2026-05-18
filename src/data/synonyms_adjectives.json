@@ -1,0 +1,7 @@
+{
+  "good": ["excellent", "superb", "outstanding"],
+  "bad": ["poor", "terrible", "harmful"],
+  "important": ["crucial", "vital", "essential"],
+  "big": ["significant", "substantial", "enormous"],
+  "many": ["various", "numerous", "countless"]
+}
